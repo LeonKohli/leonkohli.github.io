@@ -1,0 +1,26 @@
+Emacs wichtige Befehle
+======================
+Tastenkombinationen
+-------------------
+
+
+================= ==================
+Tastenkombinationen
+================= ==================
+
+Strg+x, s         Änderung Speichern
+Strg+g            3x == Abbruch
+Strg+k            Zeile Löschen
+Strg+a            Anfang der Zeile
+Strg+e            Ende der Zeile
+
+                  Zeile Kopieren
+Strg+k            1. Zeile Löschen
+Strg+y            2. beliebig oft einfügen
+
+Linksammlung
+------------
+Scratchpad: https://livesphinx.herokuapp.com/
+Emacs Download: http://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.gnu.org/emacs/windows/
+Cheat-Sheets:http://cheat-sheets.org/
+Suchmaschine:https://metager.de/

@@ -1,0 +1,36 @@
+Versionsverwaltung mit Git
+==========================
+
+Neues Repository anlegen
+------------------------
+
+Einmalig für den Projektstart
+
+::
+ 
+   cd <mein/zielordner>
+   git init --bare
+
+
+  #  Initialized empty Git repository in //BEFS-00188-043.sz.zitbb.lvnbb.de/sz-daten$/Raum8/repos/leon/
+
+
+Kopie eines Repos
+-----------------
+::
+
+   git clone O:\Raum8\repos\leon\
+   
+Jeden Tag wenn neue Inhalte entstehen
+-------------------------------------
+
+::
+   
+   git status # was hat sich geändert
+   git add .  # alles neue hinzufügen zu "Stash"
+   git reset  # unerwünschte Datein im Ordner
+
+Ausnahmeliste
+-------------
+Ausnahmen werden in der Datei .gitignore definiert
+

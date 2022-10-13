@@ -1,0 +1,532 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "MEINEDOKU" "1" "28.09.2022" "" "MeineDoku"
+.SH NAME
+meinedoku \- MeineDoku 1
+.SS Hausboot
+[Bild]
+.SH PUBLIZIEREN FÜR ZEAL
+.sp
+Was alles benötigt wird, damit meine Kollegen
+nur Zeal und die Docset installieren muss
+[Bild]
+.SH EMACS WICHTIGE BEFEHLE!
+.SS Tastenkombinationen
+.TS
+center;
+|l|l|.
+_
+T{
+Tastenkombination
+T}	T{
+Anmerkung
+T}
+_
+T{
+\fBCtrl\-x Ctrl\-s\fP
+T}	T{
+Änderungen speichern
+T}
+_
+T{
+\fBCtrl\-g\fP
+T}	T{
+3x == Abbruch
+T}
+_
+T{
+\fBCtrl\-k\fP
+T}	T{
+Löscht Zeile
+T}
+_
+T{
+\fBCtrl\-a\fP
+T}	T{
+Anfang Zeile
+T}
+_
+T{
+\fBCtrl\-e\fP
+T}	T{
+Ende der Zeile
+T}
+_
+T{
+\fBCtrl\-k\fP
+T}	T{
+.INDENT 0.0
+.IP 1. 3
+Zeile Löschen
+.UNINDENT
+T}
+_
+T{
+\fBCtrl\-y\fP
+T}	T{
+.INDENT 0.0
+.IP 2. 3
+beliebig oft einfügen
+.UNINDENT
+T}
+_
+T{
+\fBCtrl\-x Ctrl\-f\fP
+T}	T{
+Find File \- Neue Datei
+T}
+_
+T{
+\fBCtrl\-x Ctrl\-1\fP
+T}	T{
+aktuelles Fesnter im Vollbild
+T}
+_
+T{
+\fBCtrl\-x Ctrl\-2\fP
+T}	T{
+splittet horizontal
+T}
+_
+T{
+\fBCtrl\-x Ctrl\-3\fP
+T}	T{
+splittet vertikal
+T}
+_
+T{
+\fBCtrl\-w\fP
+T}	T{
+markierten Text Löschen
+T}
+_
+T{
+\fBCtrl\-Space\fP
+T}	T{
+Start markieren
+T}
+_
+.TE
+.SS Linksammlung
+.sp
+Scratchpad: \fI\%https://livesphinx.herokuapp.com/\fP
+.sp
+Emacs Download: \fI\%https://www.gnu.org/software/emacs/\fP
+.sp
+Cheat\-Sheets: \fI\%http://www.cheat\-sheets.org/\fP
+.sp
+Suchmaschiene: \fI\%https://metager.de/\fP
+.sp
+GitHub: \fI\%https://GitHub.com\fP
+.SH SOFTWARE
+.SS Versionsverwaltung mit GIT
+.SS Neues Repository anlegen
+.sp
+Einmalig für den Projektstart
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+cd <mein/zielordner>
+git init \-\-bare
+# Initialized empty Git repository in
+# //BEFS\-00188\-043.sz.zitbb.lvnbb.de/sz\-daten$/Raum8/repos/name/
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Kopie eines Repos
+.sp
+Einmalig auf lokalem Laufwerk
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+git clone O:\eRaum8\erepos\ejanneck
+git config \-\-global user.name Janneck
+git config \-\-global user.email janneck.lehmann@zit\-bb.brandenburg.de
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Jeden Tag, wenn neue Inhalte entstehen
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+git status # was hat sich geändert
+git add .  # alles neue hinzufügen zum \(dqStash\(dq
+git reset  # wenn die Liste nicht korrekt ist
+           # meist unerwünschte Dateien und Ordner
+git commit \-m \(dqein einzeilieger Kommentar\(dq
+git pull
+git push
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Clone im ZIT nur mit Proxy
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+set http_proxy=10.128.9.30:80
+set https_proxy=10.128.9.30:80
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Sphinx
+.SS Installation
+.nf
+\- Phyton instalieren (3.10)
+.in +2
+\fI\%https://www.python.org/downloads/\fP
+.in -2
+\- Anpassungen:
+.in +2
+\- Pfadkürzung auf: C:/Python310
+\- Tick bei „…enviroment variables“
+.in -2
+.fi
+.sp
+.SS Virtuelle Enviroments
+.SS Einmalig Einrichten
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+cd C:\ehome\edokus\epeter
+py \-m venv env
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Aktivieren: Immer vor Arbeitsstart!!!!
+Beachte geänderte Prompt!!!! (env)
+.SS Aktivieren
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+cd C:\ehome\edokus\eleon
+\&.\eenv\eScripts\eactivate.bat
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Dokumentation mit Sphinx
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+pip install sphinx
+pip install sphinx\-autobuild
+pip install furo
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS manuelle Version
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+make html
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS automatische Übersetzung
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+\&.\eenv\eScripts\esphinx\-autobuild source build
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Konfiguration
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built\-in configuration values, see the documentation:
+# https://www.sphinx\-doc.org/en/master/usage/configuration.html
+
+# \-\- Project information \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+# https://www.sphinx\-doc.org/en/master/usage/configuration.html#project\-information
+
+project = \(aqMeineDoku\(aq
+copyright = \(aq2022, Leon\(aq
+html_title = \(aq\(aq
+author = \(aqLeon\(aq
+release = \(aq1\(aq
+html_logo = \(aq_static/meinlogo.png\(aq
+html_favicon = \(aq_static/meinlogo.png\(aq
+
+# \-\- General configuration \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+# https://www.sphinx\-doc.org/en/master/usage/configuration.html#general\-configuration
+
+extensions = []
+templates_path = [\(aq_templates\(aq]
+exclude_patterns = []
+
+language = \(aqde\(aq
+
+# \-\- Options for HTML output \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+# https://www.sphinx\-doc.org/en/master/usage/configuration.html#options\-for\-html\-output
+
+html_theme = \(aqfuro\(aq
+#html_theme = \(aqalabaster\(aq
+
+
+html_static_path = [\(aq_static\(aq]
+
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS meine Lieblingsvideos
+.SS VS\-Codium
+.TS
+center;
+|l|l|.
+_
+T{
+Tastenkombination
+T}	T{
+Anmerkung
+T}
+_
+T{
+\fBCtrl\fP
+T}	T{
+Globale Konfig suchen
+T}
+_
+T{
+\fBCtrl+f\fP
+T}	T{
+Suchen
+T}
+_
+T{
+\fBCtrl\-h\fP
+T}	T{
+Suchen und ersetzen
+T}
+_
+T{
+\fBCtrl\-Shift+f\fP
+T}	T{
+In Dateien suchen
+T}
+_
+.TE
+.SS Pro und Contra
+.TS
+center;
+|l|l|.
+_
+T{
+Pro
+T}	T{
+Contra
+T}
+_
+T{
+Übersichtlichkeit
+T}	T{
+läuft nicht ohne GUI
+T}
+_
+T{
+minimaler Installationsaufwand
+T}	T{
+erhötes sicherheits risiko
+T}
+_
+T{
+offline nutzbar
+T}	T{
+T}
+_
+.TE
+.SS Zeal
+.sp
+Website: www.zealdocs.org
+.TS
+center;
+|l|l|.
+_
+T{
+Pro
+T}	T{
+Contra
+T}
+_
+T{
+Dokumentation für 3. Person
+T}	T{
+Erstellung eigener Docsets ist aufwendig
+T}
+_
+T{
+minimaler Installationsaufwand
+T}	T{
+ev. keine Inhalte zum Theme
+T}
+_
+T{
+offline nutzbar
+T}	T{
+T}
+_
+.TE
+.SS Installation
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# git (siehe doku zu git)
+# emacs (siehe doku zu emacs)
+# Python (siehe doku zu Python)
+pip install sphinx
+pip install sphinx\-autobuild
+pip install furo # Theme
+
+# für doc2dash
+pip install pipx
+pipx install doc2dash
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Übersetzung
+.nf
+Von HTML (Sphinx) zu Docset (Zeal/Dash)
+Nutze C:/home/dokus/leon/env/Scripts/doc2dash
+.fi
+.sp
+.SH WAS ICH HEUTE GERLERNT HABE
+.SS September 2022
+.SS September
+.TS
+center;
+|l|l|.
+_
+T{
+Datum
+T}	T{
+Anmerkung
+T}
+_
+T{
+21.09
+T}	T{
+GIT und HTML
+T}
+_
+T{
+22.09
+T}	T{
+Tabellenausrichtung und Bilder
+T}
+_
+T{
+23.09
+T}	T{
+Docset Export nach Zeal (Offline)
+T}
+_
+T{
+26.09
+T}	T{
+Projektmanagement Grundlagen und Entscheidungsmatrix
+T}
+_
+T{
+27.09
+T}	T{
+Projektmanagement und Zeiteinteilung mit einem Netzplan
+T}
+_
+T{
+28.09
+T}	T{
+Ganz viele Aufgaben die einen zum Kopf\-Glühen verhelfen
+T}
+_
+.TE
+.SH MANAGEMENT
+.SS Projekt Management
+.SH GLOSSAR
+.SS SBOM
+.sp
+Software Builds of Materials
+.SH ANHANG
+.INDENT 0.0
+.IP \(bu 2
+\fI\%Stichwortverzeichnis\fP
+.IP \(bu 2
+\fI\%Modulindex\fP
+.IP \(bu 2
+\fI\%Suche\fP
+.UNINDENT
+.SH AUTHOR
+Leon
+.SH COPYRIGHT
+2022, Leon
+.\" Generated by docutils manpage writer.
+.

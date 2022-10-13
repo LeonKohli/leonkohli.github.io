@@ -1,0 +1,23 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter I
+  \item \spxentry{Installation}, \hyperpage{10}
+    \subitem \spxentry{VS\sphinxhyphen{}Code}, \hyperpage{10}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{Proxy}, \hyperpage{8}
+
+  \indexspace
+  \bigletter V
+  \item \spxentry{VS\sphinxhyphen{}Codium}, \hyperpage{10}
+
+  \indexspace
+  \bigletter Z
+  \item \spxentry{Zeal}, \hyperpage{10}
+
+\end{sphinxtheindex}

@@ -1,0 +1,65 @@
+====== 
+Sphinx
+====== 
+
+Installation
+============
+
+| - Phyton instalieren (3.10)
+|   https://www.python.org/downloads/
+| - Anpassungen:
+|  - Pfadkürzung auf: C:/Python310
+|  - Tick bei "...enviroment variables"
+
+
+Virtuelle Enviroments
+===================== 
+Einmalig Einrichten
+-------------------
+
+::
+   
+   cd C:\home\dokus\peter
+   py -m venv env
+
+Aktivieren: Immer vor Arbeitsstart!!!!
+Beachte geänderte Prompt!!!! (env)
+
+
+Aktivieren
+----------
+::
+   
+   cd C:\home\dokus\leon
+   .\env\Scripts\activate.bat
+
+
+Dokumentation mit Sphinx
+------------------------
+
+::
+   
+   pip install sphinx
+   pip install sphinx-autobuild
+   pip install furo
+
+manuelle Version
+++++++++++++++++ 
+
+   :: 
+
+      make html
+
+automatische Übersetzung
+++++++++++++++++++++++++ 
+
+   :: 
+
+      .\env\Scripts\sphinx-autobuild source build
+
+
+Konfiguration
+============= 
+
+.. literalinclude:: ../conf.py
+   :language: python

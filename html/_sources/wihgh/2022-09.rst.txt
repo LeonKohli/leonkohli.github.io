@@ -1,0 +1,25 @@
+==============
+September 2022
+==============
+
+.. list-table:: September
+   :widths: 15  80
+   :header-rows: 1
+
+   * - Datum
+     - Anmerkung
+   * - 21.09
+     - GIT und HTML
+   * - 22.09
+     - Tabellenausrichtung und Bilder
+   * - 23.09
+     - Docset Export nach Zeal (Offline)
+   * - 26.09
+     - Projektmanagement Grundlagen und Entscheidungsmatrix
+   * - 27.09
+     - Projektmanagement und Zeiteinteilung mit einem Netzplan
+   * - 28.09
+     - Ganz viele Aufgaben die einen zum Kopf-Glühen verhelfen
+
+
+
