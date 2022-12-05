@@ -65,11 +65,3 @@ Eine Dokumentation um sich auf den Remote Desktop im ViMi-RZ zu Verbinden
 
 
 .. image:: rdpa.jpg
-
-5. Verbindung trennen
----------------------
-
- * Um die Verbindung zu trennen klicken sie auf das X in der oberen rechten Ecke des Fensters.
-
-.. image:: rdpf.jpg
-
