@@ -4,7 +4,12 @@ ViMi-RZ
 
 
 Eine Dokumentation um sich auf den Remote Desktop im ViMi-RZ zu Verbinden
-------------------------------------------------------------------------- 
+-------------------------------------------------------------------------
+ 
+ .. warning::
+            Beachten Sie das Azubis in ihrem Account den Vorname nutzen und der Lehrkörper Ihren Nachnamen.
+            Also ersetzen Sie (vorname) durch (nachname) wenn Sie zum Lehrkörper gehören.
+      
 
 1. Remote Desktop Client Starten
 -------------------------------------------------------------------------
@@ -63,5 +68,26 @@ Eine Dokumentation um sich auf den Remote Desktop im ViMi-RZ zu Verbinden
  * Setzen Sie einen Haken bei "Nicht erneut nach Verbindungen mit diesem Computer fragen." und Klicken Sie auf "Ja".
  * Nun können sind Sie mit Ihrem Remote Desktop verbunden.
 
+Benutzernamen:
+::  
+
+      (vorname)@zitau.de
+
+Kennwort:
+:: 
+
+      Passwort für den Remote Desktop
+
 
 .. image:: rdpa.jpg
+
+5. Verbindung trennen
+---------------------
+
+ * Um die Verbindung zu trennen klicken sie auf das X in der mitte rechts
+
+ .. warning::
+            Bitte niemals die PVM Herunterfahren!
+
+.. image:: rdpf.jpg
+
