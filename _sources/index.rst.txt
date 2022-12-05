@@ -17,10 +17,12 @@ MeineDoku
    ueberblick
    emacs/emacs-basics
    software/index
-   latexpdf/index  
+   latexpdf/index
+   vimirz/index
    wihgh/index
    projektmanagement/index
    glossar
+
 	     
 
 Anhang
