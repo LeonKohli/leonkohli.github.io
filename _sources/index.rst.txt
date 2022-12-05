@@ -1,10 +1,13 @@
 ===================================== 
-MeineDoku
+ViMi-RZ
 ===================================== 
 
-.. sidebar:: Hausboot
+.. sidebar:: 
 
-      .. image:: ./img/hausboot.jpg
+      .. image:: ./img/channels4_profile.jpg
+         :width: 200px
+         :align: right
+
       
       
       
@@ -14,20 +17,7 @@ MeineDoku
    :maxdepth: 2
    :caption: Contents:
 
-   ueberblick
-   emacs/emacs-basics
-   software/index
-   latexpdf/index
    vimirz/index
-   wihgh/index
-   projektmanagement/index
-   glossar
 
-	     
 
-Anhang
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
